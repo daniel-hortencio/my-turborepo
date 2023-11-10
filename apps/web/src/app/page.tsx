@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card } from "ui";
+import { Card, ButtonPrimary } from "ui";
 
 function Gradient({
   conic,
@@ -16,6 +16,7 @@ function Gradient({
         small ? "blur-[32px]" : "blur-[75px]"
       } ${conic ? "bg-glow-conic" : ""} ${className}`}
     />
+
   );
 }
 
@@ -133,6 +134,8 @@ export default function Page(): JSX.Element {
           </Card>
         ))}
       </div>
+      <ButtonPrimary>TESTE</ButtonPrimary>
     </main>
+    
   );
 }
